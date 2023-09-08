@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.inputCity {
+    width: 60%;
+    font-size: larger;
+    padding: 1.5rem;
+    display: flex;
+    border: 0;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+
+.searchCity {
+    color: rgb(50, 50, 50);
+    width: 5%;
+    font-size: x-large;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.cityName,
+.tempreature,
+.weather {
+    color: rgb(29, 29, 39);
+}
+
+.cityName {
+    font-size: xx-large;
+
+}
+
+.tempreature {
+    font-size: 5rem;
+}
+
+.weather {
+    font-size: 1.7rem;
+}
