@@ -23,20 +23,9 @@ const searchForCityWeather = function () {
         .then((resp) => resp.json())
         .then((weatherData) => {
           console.log(weatherData);
-          const temp = weatherData.main.temp;
-          tempreature.innerHTML = `${temp}°C`;
-          const status = weatherData.weather[0].main;
-          weather.innerHTML = status;
-        })
-        .catch((error) => {
-          console.error("Error fetching weather data:", error);
-          tempreature.innerHTML = "tempreature: N/A";
+          tempreature.innerHTML = `${weatherData.main.temp}°C`;
+          weather.innerHTML = weatherData.weather[0].main;
         });
-    })
-    .catch((error) => {
-      console.error("Error fetching city data:", error);
-      cityName.innerHTML = "City not found";
-      tempreature.innerHTML = "tempreature: N/A";
     });
 };
 
